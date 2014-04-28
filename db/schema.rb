@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140428231030) do
+ActiveRecord::Schema.define(version: 20140428231447) do
+
+  create_table "complaints", force: true do |t|
+    t.integer  "total"
+    t.date     "date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pizzas", force: true do |t|
     t.integer  "amount"
