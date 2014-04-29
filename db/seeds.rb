@@ -65,3 +65,5 @@ Complaint.create({total: rand(50), date: Date.new(2014,4,19)})
 
 Pizza.create({amount: rand(100..150), date: Date.new(2014,4,20)})
 Complaint.create({total: rand(50), date: Date.new(2014,4,20)})
+
+puts "Created pizzas and complaints for 20 dates"

@@ -1,4 +1,4 @@
-<h4>Pizzas Made</h4>
+<h3>Pizzas Made</h3>
 <table class="pizza">
   <thead>
     <tr>
@@ -9,14 +9,14 @@
   <tbody>
       <% @pizzas.each do |p| %>
       <tr>
-        <td>p.date</td>
-        <td>p.amount</td>
+        <td><%= p.date %></td>
+        <td><%= p.amount %></td>
       </tr>
       <% end %>
   </tbody>
 </table>
 
-<h4>Complaints</h4>
+<h3>Complaints</h3>
 <table class="complaints">
   <thead>
     <tr>
@@ -27,8 +27,8 @@
   <tbody>
     <% @complaints.each do |c| %>
     <tr>
-      <td>c.date</td>
-      <td>c.total</td>
+      <td><%= c.date %></td>
+      <td><%= c.total %></td>
     </tr>
     <% end %>
   </tbody>
