@@ -1,4 +1,5 @@
-<h2>Pizzas Made and Complaints Logged</h2>
+<h2>Pizzas Made (red) and Complaints Logged (grey)</h2>
+<br>
 <canvas id="myChart" width="1000" height="400"></canvas>
 
 
@@ -34,8 +35,8 @@
                   data : pizzaData
               },
               {
-                  fillColor : "#C2D6D6",
-                  strokeColor : "#C2D6D6",
+                  fillColor : "#616B6B",
+                  strokeColor : "#616B6B",
                   pointColor : "#000000",
                   pointStrokeColor : "#fff",
                   data : complaintData
@@ -43,10 +44,14 @@
           ]
       };
 
-      var options = {};
+      var options = {
+        scaleOverlay : true,
+        scaleShowGridLines : false,
+        animationEasing : "easeInOutSine",
+      };
 
       var ctx = document.getElementById("myChart").getContext("2d");
-      var myChart = new Chart(ctx).Line(data);
+      var myChart = new Chart(ctx).Line(data,options);
 
     })();
 </script>
