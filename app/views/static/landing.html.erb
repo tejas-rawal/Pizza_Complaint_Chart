@@ -1,3 +1,4 @@
+<canvas id="myChart" width="400" height="400"></canvas>
 <h3>Pizzas Made</h3>
 <table class="pizza">
   <thead>
@@ -33,3 +34,16 @@
     <% end %>
   </tbody>
 </table>
+
+<script>
+    (function() {
+      var pizzas = <%= raw @pizzas.to_json %>;
+      var complaints = <%= raw @complaints.to_json %>;
+      console.log(pizzas);
+
+      var ctx = document.getElementById("myChart").getContext("2d");
+
+
+
+    })();
+</script>
