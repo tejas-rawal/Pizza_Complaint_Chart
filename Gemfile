@@ -26,6 +26,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'chart-js-rails'
 
+gem 'hirb'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
